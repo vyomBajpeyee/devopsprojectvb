@@ -7,7 +7,7 @@
 <title>Addition</title>
 </head>
 <body>
-	<h6>Nissan DevOps Project : Summation of two numbers</h6>
+	<h2>Nissan DevOps Project : Summation of two numbers</h2>
 	<%if(request.getParameter("t1").equals("") || request.getParameter("t2").equals("")) {%>
 	<%= "<input type=\"text\" value=\""+(request.getParameter("t1"))+"\"/>"%>
 	<span>+</span>
