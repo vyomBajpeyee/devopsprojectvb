@@ -7,12 +7,13 @@
 <title>Addition</title>
 </head>
 <body>
+	<h6>Nissan DevOps Project : Summation of two numbers</h6>
 	<%if(request.getParameter("t1").equals("") || request.getParameter("t2").equals("")) {%>
 	<%= "<input type=\"text\" value=\""+(request.getParameter("t1"))+"\"/>"%>
 	<span>+</span>
 	<%= "<input type=\"text\" value=\""+(request.getParameter("t2"))+"\"/>"%>
 	<span>=</span>
-	<input type="text" value="Operand(s) cannot be empty"/>
+	<input type="text" size="45" value="Operand(s) cannot be empty"/>
 	<%} else{ %>
 	<% try{ 
 	float x = Float.parseFloat(request.getParameter("t1"));
@@ -21,13 +22,13 @@
 	<span>+</span>
 	<%= "<input type=\"text\" value=\""+(Float.parseFloat(request.getParameter("t2")))+"\"/>"%>
 	<span>=</span>
-	<%= "<input type=\"text\" value=\""+(Float.parseFloat(request.getParameter("t1"))+Float.parseFloat(request.getParameter("t2")))+"\"/>"%>
+	<%= "<input type=\"text\" size=\"45\" value=\""+(Float.parseFloat(request.getParameter("t1"))+Float.parseFloat(request.getParameter("t2")))+"\"/>"%>
 	<%} catch(Exception e){%>
 	<%= "<input type=\"text\" value=\""+(request.getParameter("t1"))+"\"/>"%>
 	<span>+</span>
 	<%= "<input type=\"text\" value=\""+(request.getParameter("t2"))+"\"/>"%>
 	<span>=</span>
-	<input type="text" value="Invalid Input"/>
+	<input type="text"  size="45" value="Invalid Input"/>
 	<% }} %>
 </body>
 </html>
