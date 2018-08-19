@@ -4,7 +4,7 @@
     </head>
     
     <body>
-    <h6>Nissan DevOps Project : Summation of two numbers</h6>
+    <h1>Nissan DevOps Project : Summation of two numbers</h1>
         <form action="add.jsp">
             <input type="text" name="t1" placeholder="Enter the first Number"/>
             <span>+</span>
