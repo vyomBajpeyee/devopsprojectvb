@@ -30,6 +30,6 @@
 	<span>=</span>
 	<input type="text"  size="45" value="Invalid Input"/>
 	<% }} %>
-	<a href="idex.jsp">Try Again</a>
+	<a href="index.jsp">Try Again</a>
 </body>
 </html>
